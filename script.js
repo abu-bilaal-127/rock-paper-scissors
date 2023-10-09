@@ -1,3 +1,4 @@
+// generating an option at random for the imaginary opponent
 function getComputerChoice() {
     let choices = ["rock", "paper", "scissors"];
     let length = choices.length;
@@ -9,9 +10,10 @@ function randomChoice(length) {
     return Math.floor(Math.random() * length);
 }
 
-// DOM operations
+// DOM operations and some more game logic 
 const options = document.querySelector('.options');
 
+// handling user selection
 options.addEventListener('click', (event) => {
     let target = event.target;
 
